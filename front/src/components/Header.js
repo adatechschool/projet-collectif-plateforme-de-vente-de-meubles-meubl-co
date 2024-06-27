@@ -8,6 +8,7 @@ function Header() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
+        
         <Link to = "/"><Navbar.Brand>Meubl&Co</Navbar.Brand></Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
