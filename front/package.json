@@ -1,4 +1,5 @@
 {
+  "main": "src/App.js",
   "name": "my-appeact",
   "version": "0.1.0",
   "private": true,
