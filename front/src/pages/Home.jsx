@@ -1,4 +1,4 @@
-import Header from '../components/Header';
+
 import Product from './Produit';
 
 
@@ -11,7 +11,7 @@ const Home = () => {
     ]
     return (
         <div>
-            <Header/>
+           
             <Product></Product>
             <p> <strong>nom :</strong>{meubles[0].name}</p>
         </div>
