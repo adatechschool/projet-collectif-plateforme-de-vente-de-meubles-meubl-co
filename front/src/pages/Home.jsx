@@ -1,16 +1,15 @@
 
-import Product from './Produit';
+import ProductList from '../components/ProductList';
 
 
 const Home = () => {
 
-    return (
-        <div>
-            <Product />
-            
-        </div>
+  return (
+    <div>
+      <ProductList />
+    </div>
 
-    );
+  );
 
 };
 
