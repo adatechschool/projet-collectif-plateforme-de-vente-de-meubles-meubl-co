@@ -14,10 +14,9 @@ function Header() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="#link">Panier</Nav.Link>
+            <Nav.Link ><Link to = "/produit">Produit</Link></Nav.Link>
             <NavDropdown title="Mon Compte" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Mes Commandes</NavDropdown.Item>
-              
-            
               <NavDropdown.Item href="#action/3.3">Mon Profil</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
