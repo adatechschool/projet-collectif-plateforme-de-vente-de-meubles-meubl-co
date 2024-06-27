@@ -1,0 +1,8 @@
+/* App.css */
+.App {
+  text-align: center; /* Centre le contenu à l'intérieur de l'élément avec la classe "App" */
+}
+
+main {
+  padding: 20px; /* Ajoute un padding de 20px à tous les côtés de l'élément <main> */
+}
