@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 
@@ -51,4 +52,3 @@ const Product = ({ product }) => {
 };
 
 export default Product;
-
