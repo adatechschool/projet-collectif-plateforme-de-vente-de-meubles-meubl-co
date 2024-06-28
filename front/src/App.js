@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Produit from './pages/Produit';
 import Panier from './pages/Panier';
-import Compte from './pages/Compte';
+import Connexion from './pages/Connexion';
 
 
 //import router de react pour pouvoir créerles liens entre les pages 
@@ -26,7 +26,7 @@ const App = () => {
          <Route path='/' element = {<Home/>}/> 
         <Route path='/produit' element = {<Produit/>}/> 
         <Route path='/panier' element = {<Panier/>}/> 
-        <Route path='/compte' element = {<Compte/>}/> 
+        <Route path='/connexion' element = {<Connexion/>}/> 
           
         
       </Routes>

@@ -25,10 +25,10 @@ function Header() {
             <Nav.Link><Link to = "/panier">
               <FontAwesomeIcon icon={faShoppingCart} /> </Link>
             </Nav.Link>
-            <Nav.Link><Link to = "/compte">
+            <Nav.Link><Link to = "/connexion">
               <FontAwesomeIcon icon={faUser} /> </Link>
             </Nav.Link>
-            <Nav.Link href="#connection">Connection</Nav.Link>
+
           </Nav>
         </Navbar.Collapse>
       </Container>

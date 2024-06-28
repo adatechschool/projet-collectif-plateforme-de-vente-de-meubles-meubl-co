@@ -34,6 +34,8 @@ const Produit = () => {
           product={meuble}
         />
       ))}
+
+      
     </div>
   );
 };
