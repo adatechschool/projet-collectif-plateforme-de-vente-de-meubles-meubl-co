@@ -52,11 +52,3 @@ const Product = ({ product }) => {
 
 export default Product;
 
-
-/*<div>*/
-{/* affichage des props */}/*
-<p>Name: {product.name}</p>
-<p>Type: {product.type}</p>
-<p>Price: {product.price}</p>
-</div>
-*/
