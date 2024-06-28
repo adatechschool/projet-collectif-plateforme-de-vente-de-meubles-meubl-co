@@ -199,3 +199,7 @@ a933a1,127.0.0.1,GET,http://localhost:8000/api/supply/1,1719567521,,200,request
 9f0586,127.0.0.1,GET,http://localhost:8000/api/supply/2,1719567533,,200,request
 ff28d8,::1,GET,http://localhost:8000/api/supply/,1719567544,,301,request
 e34505,::1,GET,http://localhost:8000/api/supply,1719567545,,200,request
+3dfc24,127.0.0.1,GET,http://localhost:8000/,1719575602,,404,request
+f156f9,127.0.0.1,GET,http://localhost:8000/supply,1719575609,34570e,404,request
+34570e,127.0.0.1,GET,http://localhost:8000/supply,1719575609,,404,request
+ed5b8e,127.0.0.1,GET,http://localhost:8000/api/supply,1719575617,,200,request
