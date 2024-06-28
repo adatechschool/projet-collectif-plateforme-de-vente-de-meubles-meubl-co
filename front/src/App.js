@@ -5,6 +5,9 @@ import Header from "./components/Header";
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Produit from './pages/Produit';
+import Panier from './pages/Panier';
+import Compte from './pages/Compte';
+
 
 //import router de react pour pouvoir créerles liens entre les pages 
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
@@ -22,6 +25,8 @@ const App = () => {
         {/* la façon de créer les rooters */}
          <Route path='/' element = {<Home/>}/> 
         <Route path='/produit' element = {<Produit/>}/> 
+        <Route path='/panier' element = {<Panier/>}/> 
+        <Route path='/compte' element = {<Compte/>}/> 
           
         
       </Routes>

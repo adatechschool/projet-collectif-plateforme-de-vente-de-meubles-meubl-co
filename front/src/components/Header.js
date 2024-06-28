@@ -7,7 +7,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
-// import rooter
+//import router pour lier les pages .
 import { Link } from 'react-router-dom';
 
 // Style bootstrap de Header
@@ -22,11 +22,11 @@ function Header() {
           <Nav.Link ><Link to = "/produit">Produit</Link></Nav.Link>
           </Nav>
           <Nav>
-            <Nav.Link href="#cart">
-              <FontAwesomeIcon icon={faShoppingCart} /> 
+            <Nav.Link><Link to = "/panier">
+              <FontAwesomeIcon icon={faShoppingCart} /> </Link>
             </Nav.Link>
-            <Nav.Link href="#account">
-              <FontAwesomeIcon icon={faUser} /> 
+            <Nav.Link><Link to = "/compte">
+              <FontAwesomeIcon icon={faUser} /> </Link>
             </Nav.Link>
             <Nav.Link href="#connection">Connection</Nav.Link>
           </Nav>
