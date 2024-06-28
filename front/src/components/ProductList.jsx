@@ -17,8 +17,6 @@ const Produit = () => {
   return (
     <div>
       
-      
-
 {/* Utilise la méthode map pour itérer sur chaque élément du tableau meubles. */}
 {/* Pour chaque meuble, un composant Product est créé. */}
 
@@ -41,3 +39,4 @@ const Produit = () => {
 };
 
 export default Produit; // Exporte le composant Produit par défaut
+
