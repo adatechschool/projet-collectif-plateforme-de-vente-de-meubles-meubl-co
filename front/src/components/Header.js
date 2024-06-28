@@ -1,28 +1,34 @@
+//import des icone panier et compte
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+
+//import bootstrap
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+
+// import rooter
 import { Link } from 'react-router-dom';
 
+// Style bootstrap de Header
 function Header() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar style={{ backgroundColor: '#6D9075', color: 'white'}}>
       <Container>
-        
-        <Link to = "/"><Navbar.Brand>Meubl&Co</Navbar.Brand></Link>
+      <Link to = "/"><Navbar.Brand>Meubl&Co</Navbar.Brand></Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#link">Panier</Nav.Link>
-            <Nav.Link ><Link to = "/produit">Produit</Link></Nav.Link>
-            <NavDropdown title="Mon Compte" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Mes Commandes</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Mon Profil</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Déconnexion
-              </NavDropdown.Item>
-            </NavDropdown>
+          <Nav.Link ><Link to = "/produit">Produit</Link></Nav.Link>
+          </Nav>
+          <Nav>
+            <Nav.Link href="#cart">
+              <FontAwesomeIcon icon={faShoppingCart} /> 
+            </Nav.Link>
+            <Nav.Link href="#account">
+              <FontAwesomeIcon icon={faUser} /> 
+            </Nav.Link>
+            <Nav.Link href="#connection">Connection</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

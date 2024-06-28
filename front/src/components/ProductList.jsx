@@ -1,6 +1,7 @@
-import Product from "./Product"; // Importe le composant Product depuis le fichier "../components/Product"
+ // Importe le composant Product depuis le fichier Product.js
+import Product from "./Product";
 
-const meubles = [ // Définit un tableau d'objets représentant différents meubles
+const meubles = [ 
   { id: 1, name: 'Table', type: 'Dining', price: 150 },
   { id: 2, name: 'Chair', type: 'Office', price: 80 },
   { id: 2, name: 'Chair', type: 'Office', price: 80 },
@@ -10,24 +11,29 @@ const meubles = [ // Définit un tableau d'objets représentant différents meub
 ]
 
 const Produit = () => {
-  const products = []; // Initialise un tableau vide pour stocker les composants Product
+  const products = []; 
 
   // Boucle for traditionnelle pour parcourir le tableau meubles
-  for (let i = 0; i < meubles.length; i++) {
-    const meuble = meubles[i]; // Récupère l'objet meuble à l'indice i dans le tableau meubles
-
-    // Ajoute un composant Product à products avec les propriétés key et product
-    products.push(
-      <Product
-        product={meuble} // Prop product contenant les données du meuble actuel
-      />
-    );
-  }
-
-  // Retourne une div contenant tous les composants Product générés dans la boucle for
   return (
     <div>
-      {products}
+      
+      
+
+{/* Utilise la méthode map pour itérer sur chaque élément du tableau meubles. */}
+{/* Pour chaque meuble, un composant Product est créé. */}
+
+      {meubles.map((meuble) => (
+        
+    // Crée une instance du composant Product pour chaque objet meuble.
+        <Product 
+            
+          // Fournit une clé unique pour chaque élément de la liste. La clé aide React à identifier quels éléments ont changé, ont été ajoutés ou supprimés. Utiliser meuble.id garantit que chaque Product a une clé unique.
+          key={meuble.id}
+
+          // product={meuble} : Passe l'objet meuble en tant que prop product au composant Product.
+          product={meuble}
+        />
+      ))}
     </div>
   );
 };
