@@ -1474,6 +1474,6 @@ class __TwigTemplate_1799fece68e65b2f522f5f5f55659dff extends Template
         <span>{{ route|default(controller) }}</span>
     {%- endif %}
 {% endmacro %}
-", "@WebProfiler/Collector/request.html.twig", "/Users/photomb/Work/work/vendor/symfony/web-profiler-bundle/Resources/views/Collector/request.html.twig");
+", "@WebProfiler/Collector/request.html.twig", "/Users/photomb/ADA_COURS/Projets/projet-collectif-plateforme-de-vente-de-meubles-meubl-co/BACK/vendor/symfony/web-profiler-bundle/Resources/views/Collector/request.html.twig");
     }
 }

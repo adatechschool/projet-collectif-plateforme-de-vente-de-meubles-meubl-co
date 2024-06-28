@@ -199,3 +199,16 @@ a933a1,127.0.0.1,GET,http://localhost:8000/api/supply/1,1719567521,,200,request
 9f0586,127.0.0.1,GET,http://localhost:8000/api/supply/2,1719567533,,200,request
 ff28d8,::1,GET,http://localhost:8000/api/supply/,1719567544,,301,request
 e34505,::1,GET,http://localhost:8000/api/supply,1719567545,,200,request
+f776f5,127.0.0.1,GET,http://localhost:8000/,1719578569,,404,request
+9a8ceb,127.0.0.1,GET,http://localhost:8000/api/supply,1719578756,,200,request
+61b53e,127.0.0.1,GET,http://localhost:8000/api/supply/1,1719578796,,200,request
+efed4f,127.0.0.1,GET,http://localhost:8000/api/supply/3,1719578821,,200,request
+8b0e81,127.0.0.1,GET,http://localhost:8000/api/supply,1719579492,,200,request
+97fed9,127.0.0.1,GET,http://localhost:8000/api/supply/1,1719579507,,200,request
+221af1,127.0.0.1,GET,http://localhost:8000/api/supply/0,1719579517,,200,request
+6287f0,127.0.0.1,GET,http://localhost:8000/api/supply,1719579522,,200,request
+3aa0b5,127.0.0.1,GET,http://localhost:8000/api/supply/1,1719579534,,200,request
+a734e9,::1,GET,http://localhost:8000/api/supply/1,1719579668,,200,request
+f379ba,127.0.0.1,GET,http://localhost:8000/supply,1719580193,d32444,404,request
+d32444,127.0.0.1,GET,http://localhost:8000/supply,1719580193,,404,request
+b91b2a,127.0.0.1,GET,http://localhost:8000/api/supply,1719580201,,200,request

@@ -1724,6 +1724,6 @@ $context["voter_detail"], "vote", [], "array", false, false, false, 483) == Twig
         </div>
     {% endif %}
 {% endblock %}
-", "@Security/Collector/security.html.twig", "/Users/photomb/Work/work/vendor/symfony/security-bundle/Resources/views/Collector/security.html.twig");
+", "@Security/Collector/security.html.twig", "/Users/photomb/ADA_COURS/Projets/projet-collectif-plateforme-de-vente-de-meubles-meubl-co/BACK/vendor/symfony/security-bundle/Resources/views/Collector/security.html.twig");
     }
 }

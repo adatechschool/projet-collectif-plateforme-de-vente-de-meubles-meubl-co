@@ -458,6 +458,6 @@ class __TwigTemplate_447b16750859c049d084f920ddf90fed extends Template
         </div>
     {% endfor %}
 {% endblock %}
-", "@Debug/Profiler/dump.html.twig", "/Users/photomb/Work/work/vendor/symfony/debug-bundle/Resources/views/Profiler/dump.html.twig");
+", "@Debug/Profiler/dump.html.twig", "/Users/photomb/ADA_COURS/Projets/projet-collectif-plateforme-de-vente-de-meubles-meubl-co/BACK/vendor/symfony/debug-bundle/Resources/views/Profiler/dump.html.twig");
     }
 }

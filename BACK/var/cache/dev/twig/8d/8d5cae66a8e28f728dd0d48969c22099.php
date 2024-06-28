@@ -244,6 +244,6 @@ $context["name"], "profiler_markup_version" =>                 // line 17
     </button>
 </div>
 <!-- END of Symfony Web Debug Toolbar -->
-", "@WebProfiler/Profiler/toolbar.html.twig", "/Users/photomb/Work/work/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/toolbar.html.twig");
+", "@WebProfiler/Profiler/toolbar.html.twig", "/Users/photomb/ADA_COURS/Projets/projet-collectif-plateforme-de-vente-de-meubles-meubl-co/BACK/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/toolbar.html.twig");
     }
 }

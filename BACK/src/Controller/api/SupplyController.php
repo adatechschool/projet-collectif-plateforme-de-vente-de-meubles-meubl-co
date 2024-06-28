@@ -21,7 +21,7 @@ class SupplyController extends AbstractController
     #[Route('/api/supply/{id}')]
     public function show(MeubleEcoRepository $repository, int $id) //ici on ne traite que l'informtion id
     {
-        $furniture = $repository->findOneBy(['id' => $id]);
+        $furniture = $repository->findOneBy(['id' => $id]); //la methode recupere l'info par l'id
         //dd($furniture); //var_dump $furniture
         return $this -> json($furniture, 200, [], [
             'groups' => ['supply.show']
