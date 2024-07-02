@@ -14,7 +14,7 @@ class MeubleEco
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]
-    #[Groups(['supply.show'])] //GROUPS : nécessaire pour ajouter cette valeur au json
+    #[Groups(['supply.index','supply.show'])] //GROUPS : nécessaire pour ajouter cette valeur au json
     private ?int $id = null;
 
     #[ORM\Column(length: 255)]
@@ -113,6 +113,18 @@ class MeubleEco
     public function setColor(string $color): static
     {
         $this->color = $color;
+
+        return $this;
+    }
+
+    public function getWidth(): ?string
+    {
+        return $this->width;
+    }
+
+    public function setWidth(string $width): static
+    {
+        $this->width = $width;
 
         return $this;
     }
