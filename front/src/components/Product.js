@@ -31,7 +31,6 @@ const Product = ({ product }) => {
               </div>
               <div>
               <p className='text-muted mb-4'>Etat : {product.status} • Couleur : {product.color} • Matière : {product.material}</p>
-                <p>{product.description}</p>
               </div>
               <div>
                 <div className="d-flex justify-content-between">
