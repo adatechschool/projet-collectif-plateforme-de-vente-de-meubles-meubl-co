@@ -14,23 +14,23 @@ class MeubleEco
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]
-    #[Groups(['supply.index','supply.show'])] //GROUPS : nécessaire pour ajouter cette valeur au json
+    #[Groups(['supply.index','supply.show','supply.category'])] //GROUPS : nécessaire pour ajouter cette valeur au json
     private ?int $id = null;
 
     #[ORM\Column(length: 255)]
-    #[Groups(['supply.index', 'supply.show'])] //2 valeurs dans GROUPS pour les #Route "index" et "show"
+    #[Groups(['supply.index', 'supply.show','supply.category'])] //2 valeurs dans GROUPS pour les #Route "index" et "show"
     private ?string $name = null;
 
     #[ORM\Column(length: 100)]
-    #[Groups(['supply.index', 'supply.show'])]
+    #[Groups(['supply.index', 'supply.show','supply.category'])]
     private ?string $category = null;
 
     #[ORM\Column(length: 100)]
-    #[Groups(['supply.index', 'supply.show'])]
+    #[Groups(['supply.index', 'supply.show','supply.category'])]
     private ?string $material = null;
 
     #[ORM\Column(length: 100)]
-    #[Groups(['supply.index', 'supply.show'])]
+    #[Groups(['supply.index', 'supply.show','supply.category'])]
     private ?string $color = null;
 
     #[ORM\Column(type: Types::DECIMAL, precision: 10, scale: 2)]
@@ -38,30 +38,27 @@ class MeubleEco
     private ?string $width = null;
 
     #[ORM\Column(type: Types::DECIMAL, precision: 10, scale: 2)]
-    #[Groups(['supply.index', 'supply.show'])]
+    #[Groups(['supply.index', 'supply.show','supply.category'])]
     private ?string $height = null;
 
     #[ORM\Column(type: Types::DECIMAL, precision: 10, scale: 2)]
-    #[Groups(['supply.index', 'supply.show'])]
+    #[Groups(['supply.index', 'supply.show','supply.category'])]
     private ?string $depth = null;
 
     #[ORM\Column(type: Types::TEXT, length: 1000)]
-    #[Groups(['supply.index', 'supply.show'])]
+    #[Groups(['supply.index', 'supply.show','supply.category'])]
     private ?string $description = null;
 
     #[ORM\Column(type: Types::DECIMAL, precision: 10, scale: 2)]
-    #[Groups(['supply.index', 'supply.show'])]
+    #[Groups(['supply.index', 'supply.show','supply.category'])]
     private ?float $price = null;
 
     #[ORM\Column(length: 255)]
-    #[Groups(['supply.index', 'supply.show'])]
+    #[Groups(['supply.index', 'supply.show','supply.category'])]
     private ?string $picturl = null;
 
-    #[ORM\Column(type: Types::BLOB)]
-    private $pictures;
-
     #[ORM\Column(length: 100)]
-    #[Groups(['supply.index', 'supply.show'])]
+    #[Groups(['supply.index', 'supply.show','supply.category'])]
     private ?string $status = null;
 
     public function getId(): ?int
@@ -179,12 +176,12 @@ class MeubleEco
 
     public function getPictures()
     {
-        return $this->pictures;
+        return $this->picturl;
     }
 
-    public function setPictures($pictures): static
+    public function setPictures($picturl): static
     {
-        $this->pictures = $pictures;
+        $this->picturl = $picturl;
 
         return $this;
     }
