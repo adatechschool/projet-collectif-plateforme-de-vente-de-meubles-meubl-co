@@ -15,20 +15,30 @@ function Header() {
   return (
     <Navbar style={{ backgroundColor: '#6D9075', color: 'white'}}>
       <Container>
-      <Link to = "/"><Navbar.Brand>Meubl&Co</Navbar.Brand></Link>
+      <Link to = "/"><Navbar.Brand><img src="img/logo.svg" alt="logo meubl&Co"/></Navbar.Brand></Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-          <Nav.Link ><Link to = "/produit">Produit</Link></Nav.Link>
+            <Nav.Link ><Link to = "/produit">Canapés</Link></Nav.Link>
+            <Nav.Link ><Link to = "/produit">Tables</Link></Nav.Link>
+            <Nav.Link ><Link to = "/produit">Chaises</Link></Nav.Link>
+            <Nav.Link ><Link to = "/produit">Rangements</Link></Nav.Link>
+            <Nav.Link ><Link to = "/produit">Luminaires</Link></Nav.Link>
+            <Nav.Link ><Link to = "/produit">Décoration</Link></Nav.Link>
+            <Nav.Link ><Link to = "/produit">Divers</Link></Nav.Link>
           </Nav>
           <Nav>
+          <Nav.Link>
+            <Link to = "/Vendre">
+              <button className="btn btn-primary">Vendre</button>
+            </Link>
+            </Nav.Link>
             <Nav.Link><Link to = "/panier">
               <FontAwesomeIcon icon={faShoppingCart} /> </Link>
             </Nav.Link>
             <Nav.Link><Link to = "/connexion">
               <FontAwesomeIcon icon={faUser} /> </Link>
             </Nav.Link>
-
           </Nav>
         </Navbar.Collapse>
       </Container>

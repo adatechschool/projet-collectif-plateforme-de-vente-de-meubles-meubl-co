@@ -1,0 +1,22 @@
+.nav-link a {
+    color: white;
+    font-size: 1.1em;
+    text-decoration: none;
+    padding-left: 15%;
+}
+
+.nav-link a:hover {
+    color: #ffff99;
+    text-decoration: underline overline #fff;
+}
+
+.svg-inline--fa {
+    height: 1.6em;
+    margin-top: 5px;
+}
+
+.navbar-brand {
+    --bs-navbar-brand-margin-end: 10rem;
+}
+
+
