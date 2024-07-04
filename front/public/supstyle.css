@@ -1,13 +1,29 @@
+/*--------------------------Style Sup-------------------*/
+
+.box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.navbar {
+    border-bottom: #fff 1px solid;
+}
+
 .nav-link a {
     color: white;
-    font-size: 1.1em;
+    font-size: 1em;
     text-decoration: none;
-    padding-left: 15%;
 }
 
 .nav-link a:hover {
     color: #ffff99;
     text-decoration: underline overline #fff;
+}
+
+.nav-link {
+    margin-left: 1%;
 }
 
 .svg-inline--fa {
@@ -19,4 +35,40 @@
     --bs-navbar-brand-margin-end: 10rem;
 }
 
+.img-nav-link {
+    width: 21%;
+    margin-right: 0;
+    padding-right: 2%;
+}
 
+h2 {
+    text-align: center;
+    background-color: #6d9075;
+    padding: 30px 0;
+    font-size: 0.5em;
+    --bs-heading-color: white;
+    font-weight: 100;
+    line-height: 1;
+}
+
+.des {
+    font-size: 1.3em;
+    font-weight: 300;
+    font-style: italic;
+    padding-bottom: 30px;
+}
+
+.price {
+    text-align: center;
+    padding: 0 5px;
+    margin: 0 5px;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: white;
+    background-color: #6d9075;
+    border-radius: 15%;
+}
+
+.card-body {
+    background-color: #f9F9F9;
+}
