@@ -18,8 +18,8 @@ class SupplyController extends AbstractController
         ]);
     }
 
-    #[Route('/api/supply/{id}')]
-    public function show(MeubleEcoRepository $repository, int $id) //ici on ne traite que l'informtion id
+    #[Route('/api/supply/product/{id}')]
+    public function idOne(MeubleEcoRepository $repository, int $id) //ici on ne traite que l'information id
     {
         $furniture = $repository->findOneBy(['id' => $id]);
         //dd($furniture); //var_dump $furniture
