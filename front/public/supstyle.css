@@ -1,9 +1,8 @@
 /*--------------------------Style Sup-------------------*/
 
 .box {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 
