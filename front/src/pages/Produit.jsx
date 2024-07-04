@@ -23,4 +23,4 @@ const Solo = () => {
   );
 };
 
-export default Produit;
+export default Solo;
