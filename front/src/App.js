@@ -16,7 +16,7 @@ import Decos from './pages/Decos';
 import Divers from './pages/Divers';
 
 
-//import router de react pour pouvoir créer les liens entre les pages 
+//import router de react pour pouvoir créerles liens entre les pages 
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
 //import bootstrap
