@@ -80,3 +80,9 @@ en français : https://download.adminerevo.org/4.8.4/adminer/adminer-mysql-fr.zi
 
 une fois téléchargé, le deziper, copier/coller dans  le dossier public du projet,  et le renommer adminer.php  avec l'explorateur de fichiers.
 
+
+NOTE : pour les problèmes de CORS (multisources otigins), il faut installer le bundle nelmio par comoser tel que :
+composer require nelmio/cors-bundle
+--> une fois installer s'assurer d'avoir sur votre Symfony votre fichier composer.json la ligne synfony/flex 
+  - si oui, votre congiguration avec CORS gérés est fonctionnelle (plus besoin du plugins navigateurs anti-CORS) (documentations: https://github.com/nelmio/NelmioCorsBundle)
+  - si non, vous trouvez cette ligne symfony/symfony, vous devez installer symfony/flex tel que : https://symfony.com/doc/current/setup/flex.html (suivre cette documentation)
