@@ -86,3 +86,11 @@ composer require nelmio/cors-bundle
 --> une fois installer s'assurer d'avoir sur votre Symfony votre fichier composer.json la ligne synfony/flex 
   - si oui, votre congiguration avec CORS gérés est fonctionnelle (plus besoin du plugins navigateurs anti-CORS) (documentations: https://github.com/nelmio/NelmioCorsBundle)
   - si non, vous trouvez cette ligne symfony/symfony, vous devez installer symfony/flex tel que : https://symfony.com/doc/current/setup/flex.html (suivre cette documentation)
+
+  Puis il vous faudra ajouter une excpetions CORS dans le fichier .env (environnement de symfony) comme suit :
+  
+    ###> nelmio/cors-bundle ###
+    CORS_ALLOW_ORIGIN='^https?://(localhost|127\.0\.0\.1)(:[0-9]+)?$'
+    ###< nelmio/cors-bundle ###
+
+    --> C'est une REGEX qui donne toutes les URL possibles en exception.
